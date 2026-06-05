@@ -47,12 +47,7 @@ annotate entity zi71_matable with
   ]
   Job;
 
-  // @Consumption.valueHelpDefinition: [{
-  //    entity: {
-  //      name    : 'ZI_CURRENCY_VH',
-  //      element : 'Currency'
-  //    }
-  //  }]
+
   @UI.lineItem: [{ position: 50 }]
   @UI.identification: [{ position: 50 }]
   Salary;
