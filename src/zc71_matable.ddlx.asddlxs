@@ -56,18 +56,7 @@ annotate entity zi71_matable with
   @UI.identification: [{ position: 60 }]
   Deactivate;
 
-  //  @UI.lineItem: [{ position: 60 }]
-  //  created_on;
-  //
-  //  @UI.lineItem: [{ position: 70 }]
-  //  created_by;
-  //
-  //  @UI.lineItem: [{ position: 80 }]
-  //  changed_by;
-  //
-  //  @UI.lineItem: [{ position: 90 }]
-  //  changed_on;
-  //
+
   @UI.lineItem: [{ position: 60 }]
   @UI.identification: [{ position: 60 }]
   CreatedOn;
