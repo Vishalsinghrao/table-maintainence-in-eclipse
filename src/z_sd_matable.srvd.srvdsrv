@@ -1,0 +1,4 @@
+@EndUserText.label: 'sd for ztable'
+define service Z_sd_matable {
+  expose zi71_matable;
+}

@@ -1,0 +1,94 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Employee',
+  typeNamePlural: 'Employees',
+  title: {
+      type: #STANDARD,
+      value: 'Name'
+  }
+  }
+annotate entity zi71_matable with
+{
+  @UI.facet: [
+  {
+   id: 'General',
+   purpose: #STANDARD,
+   type: #IDENTIFICATION_REFERENCE,
+   label: 'Employee Details',
+   position: 10
+  }
+  ]
+
+
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  Bukrs;
+
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  Name;
+
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  Age;
+
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  @Consumption.valueHelpDefinition: [
+    {
+    entity:{
+     name: 'zi_domain_fv',
+     element: 'ddtext'
+    }
+    }
+  ]
+  Job;
+
+  // @Consumption.valueHelpDefinition: [{
+  //    entity: {
+  //      name    : 'ZI_CURRENCY_VH',
+  //      element : 'Currency'
+  //    }
+  //  }]
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  Salary;
+
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  Deactivate;
+
+  //  @UI.lineItem: [{ position: 60 }]
+  //  created_on;
+  //
+  //  @UI.lineItem: [{ position: 70 }]
+  //  created_by;
+  //
+  //  @UI.lineItem: [{ position: 80 }]
+  //  changed_by;
+  //
+  //  @UI.lineItem: [{ position: 90 }]
+  //  changed_on;
+  //
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  CreatedOn;
+  //
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  CreatedBy;
+  //
+  @UI.lineItem: [{ position: 80 }]
+  @UI.identification: [{ position: 80 }]
+  LastChangedAt;
+  //
+  @UI.lineItem: [{ position: 90 }]
+  @UI.identification: [{ position: 90 }]
+  LastChangedBy;
+
+
+
+}

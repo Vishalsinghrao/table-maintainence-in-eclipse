@@ -1,0 +1,40 @@
+managed implementation in class zbp_i71_matable unique;
+//strict ( 2 );
+
+define behavior for zi71_matable //alias <alias_name>
+persistent table Z71_TABLE
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+//  update;
+  field ( readonly ) CreatedBy, CreatedOn, LastChangedAt, LastChangedBy;
+
+//  field ( features : instance )
+//    Bukrs,
+//    Name,
+//    Age,
+//    Job,
+//    Salary,
+//    Currency,
+//    Deactivate;
+
+update ( features : instance );
+
+
+  mapping for z71_table
+  {
+    Bukrs = bukrs;
+    Name = name;
+    Age = age;
+    Job = job;
+    Salary = salary;
+    Currency = currency;
+    Deactivate = is_active;
+    CreatedBy = created_by;
+    CreatedOn = created_on;
+    LastChangedBy = changed_by;
+    LastChangedAt = changed_on;
+  }
+}
